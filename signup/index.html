@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Proyecto</title>
+</head>
+<body>
+
+    <div id="container" class="h-screen pt-20 dark:bg-slate-800 bg-zinc-50 
+    flex justify-center items-center px-4 gap-8">
+        <form id="form" class=" dark:bg-slate-600 bg-zinc-100 dark:border-slate-500 w-full lg:w-[45%] md:w-[70%] rounded-lg 
+        dark:shadow-2xl shadow-md p-2 flex flex-col gap-4">
+
+                                            <!-- 1 -->
+           <!-- Nombre -->
+            <div class="flex flex-col gap-2 text-lg relative">
+                <label for="name-input" class="dark:text-white text-zinc-800 font-semibold">Nombre y Apellido 
+                    <span class="dark:text-red-400 text-red-500">*</span>
+                </label>
+                <!-- Div con svg -->
+                <div class="relative">
+                    <!-- Input -->
+                    <input type="text" id="name-input" class="outline-none p-2 rounded-md border 
+                    dark:border-slate-500 bg-transparent focus:outline-0 focus:ring-2 focus:ring-blue-400
+                    easy-in duration-150 dark:text-white text-zinc-700 w-full">
+
+                    <div class="absolute right-1 bottom-1 top-1 px-2 flex justify-center items-center dark:bg-slate-600 bg-zinc-100">
+                    <!-- X icon -->
+                    <svg class="w-6 h-6 text-red-400 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                        </svg>
+
+                    <!-- Check icon -->
+                    <svg class="w-6 h-6 text-green-400 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>                      
+                    </div>
+                </div>
+                  
+                <p class="dark:text-red-400 font-semibold text-red-500 text-sm
+                hidden">(Este campo es requerido. Debe contener primera letra de su nombre y apellido en mayuscula.)</p>
+            </div>
+
+
+                                            <!-- 2 -->
+            <!-- Input Email -->
+            <div class="flex flex-col gap-2 text-lg relative">
+                <label for="email-input" class="dark:text-white text-zinc-800 font-semibold">Email
+                    <span class="dark:text-red-400 text-red-500">*</span>
+                </label>
+
+                 <!-- Div con svg -->
+                 <div class="relative">
+                    <!-- Input -->
+                    <input type="text" id="email-input" class="outline-none p-2 rounded-md border 
+                    dark:border-slate-500 bg-transparent focus:outline-0 focus:ring-2 focus:ring-blue-400
+                    easy-in duration-150 dark:text-white text-zinc-700 w-full">
+
+                    <div class="absolute right-1 bottom-1 top-1 px-2 flex justify-center items-center dark:bg-slate-600 bg-zinc-100">
+                    <!-- X icon -->
+                    <svg class="w-6 h-6 text-red-400 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                        </svg>
+
+                    <!-- Check icon -->
+                    <svg class="w-6 h-6 text-green-400 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>                      
+                    </div>
+                </div>
+                  
+                <p class="dark:text-red-400 font-semibold text-red-500 text-sm
+                hidden">(El formato del email es el siguiente: email@gmail.com)</p>
+            </div>
+
+
+                                            <!-- 3 -->
+
+            <!-- Input password -->
+            <div class="flex flex-col gap-2 text-lg relative">
+                <label for="password-input" class="dark:text-white text-zinc-800 font-semibold">Contraseña
+                    <span class="dark:text-red-400 text-red-500">*</span>
+                </label>
+
+                <!-- Div con svg -->
+                <div class="relative">
+                    <!-- Input -->
+                    <input type="password" id="password-input" class="outline-none p-2 rounded-md border 
+                    dark:border-slate-500 bg-transparent focus:outline-0 focus:ring-2 focus:ring-blue-400
+                    easy-in duration-150 dark:text-white text-zinc-700 w-full">
+
+                    <div class="absolute right-1 bottom-1 top-1 px-2 flex justify-center items-center dark:bg-slate-600 bg-zinc-100">
+                        <!-- X icon -->
+                        <svg class="w-6 h-6 text-red-400 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                            </svg>
+    
+                        <!-- Check icon -->
+                        <svg class="w-6 h-6 text-green-400 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>                      
+                        </div>
+                    </div>
+                  
+                <p class="dark:text-red-400 font-semibold text-red-500 text-sm
+                hidden">(Debe contener al menos 8 caracteres, incluyendo al menos 1 letra mayuscula y 1 numero. )</p>
+            </div>
+
+                                            <!-- 4 -->
+            
+            <!-- Input confirm password -->
+            <div class="flex flex-col gap-2 text-lg relative">
+                <label for="match-input" class="dark:text-white text-zinc-800 font-semibold">Confirmar contraseña
+                    <span class="dark:text-red-400 text-red-500">*</span>
+                </label>
+                <!-- Div con svg -->
+                <div class="relative">
+                    <!-- Input -->
+                    <input type="password" id="match-input" class="outline-none p-2 rounded-md border 
+                    dark:border-slate-500 bg-transparent focus:outline-0 focus:ring-2 focus:ring-blue-400
+                    easy-in duration-150 dark:text-white text-zinc-700 w-full">
+
+                    <div class="absolute right-1 bottom-1 top-1 px-2 flex justify-center items-center dark:bg-slate-600 bg-zinc-100">
+                        <!-- X icon -->
+                        <svg class="w-6 h-6 text-red-400 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                          </svg>
+    
+                          <!-- Check icon -->
+                          <svg class="w-6 h-6 text-green-400 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>                      
+                    </div>
+                </div>
+
+                <p class="dark:text-red-400 font-semibold text-red-500 text-sm
+                hidden">
+                (La contraseña debe coincidir con la anterior)
+            </p>
+            </div>
+
+                                            <!-- OTROS luego! -->
+
+
+                                            
+            <button id="form-btn" class="dark:bg-green-500 bg-green-600 rounded-lg p-2 text-green-50
+            uppercase font-semibold dark:hover:bg-green-400 hover:bg-green-400 easy-in duration-300">Registrar</button>
+        </form>
+
+        <div class="hidden lg:flex w-[45%] h-[70%] justify-center items-center">
+            <img src="../img/undraw_join_re_w1lh.svg" alt="" class="h-full object-cover">
+        </div>
+
+    </div>
+
+    <script src="../components/nav.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
